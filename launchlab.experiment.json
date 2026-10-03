@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "name": "signal-desk",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "goalEvent": "report_generated",
+  "hypothesis": "Can builders obtain a useful agent-service report without assistance?",
+  "mode": "demo",
+  "dataNotice": "Browser-local rehearsal data. No live payments, rewards, market data, or autonomous model calls.",
+  "eventDefinitions": [
+    {"name":"report_requested","description":"Generate report button clicked; intent, including invalid requests."},
+    {"name":"report_generated","description":"A valid brief successfully produced a simulated report."},
+    {"name":"helpfulness_rated","description":"A report helpfulness rating was selected."},
+    {"name":"review_revisited","description":"A locally stored review was opened."},
+    {"name":"report_exported","description":"Report JSON download was requested."}
+  ],
+  "configurationNotice": "Advisory metadata only. Event definitions must be added to the approved LaunchLab tracker plan; they are not automatically loaded."
+}
